@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>KIT-TIN — Large-Scale Engineering & Construction</title>
   <link rel="icon" href="a1.png" type="image/png">
   <meta name="description" content="KIT-TIN Limited delivers large-scale engineering and construction projects for banking, corporate, and government institutions." />
@@ -479,6 +479,17 @@
   
 
   <script src="modal.js"></script>
+
   <script src="countup.js"></script>
+  <script>
+    // Block Ctrl + Scroll and pinch zoom
+    document.addEventListener('wheel', function (e) {
+      if (e.ctrlKey) e.preventDefault();
+    }, { passive: false });
+
+    document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+  </script>
 </body>
 </html>
