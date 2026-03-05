@@ -20,11 +20,9 @@
       if (!raw) return [];
       return raw
         .split(",")
-        .map(s => s.trim())
-        .filter(Boolean)
-        .slice(0, 6); // limit to 6
+        .map((s) => s.trim())
+        .filter(Boolean);
     };
-  
     const openModal = (card) => {
       const title = card.getAttribute("data-title") || "";
       const desc = card.getAttribute("data-desc") || "";
