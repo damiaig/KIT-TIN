@@ -8,6 +8,15 @@
     --white: #FFFFFF;
   }
 
+  .projects-note {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    text-decoration: underline;
+    margin-top: -5px;
+    margin-bottom: 25px;
+  }
+
   html {
     scroll-behavior: smooth;          /* put it on html, not body */
     scroll-padding-top: 92px;         /* offset for sticky header */
